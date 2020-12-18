@@ -12,3 +12,6 @@ Instructions:
       4. main.py
     here the input.txt is the whatsapp chat export and 
     both the output files are sorted form of the messages
+Info:
+=====
+    the delimiter used for the csv file is backtick(`)
