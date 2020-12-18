@@ -1,5 +1,5 @@
 # opening the whatsapp chat export file
-read = open("/content/drive/MyDrive/Colab Notebooks/input.txt", 'r')
+read = open("./input.txt", 'r')
 lines = read.readlines()  # readind the individual lines of the text file
 
 output = []  # this varianle contains a list of seperated datas
@@ -60,16 +60,16 @@ for i in numbers:
 format = input('enter a file format([csv/txt]): ')
 last_index = 0
 if format == 'csv':
-    main_output.append('Date,Time,Name,Message\n')
+    main_output.append('Date`Time`Name`Message\n')
     for i in range(0, len(output)):
         if output[i][2] != '':
             last_index = i
 
         if required_names.count(output[i][2]) != 0:
-            main_output.append(f'{output[i][0]},{output[i][1]},{output[i][2]},{output[i][3]}\n')
+            main_output.append(f'{output[i][0]}`{output[i][1]}`{output[i][2]}`{output[i][3]}\n')
         elif output[i][2] == '':
             if required_names.count(output[last_index][2]) != 0:
-                main_output.append(f'{output[i][0]},{output[i][1]},{output[i][2]},{output[i][3]}\n')
+                main_output.append(f'{output[i][0]}`{output[i][1]}`{output[i][2]}`{output[i][3]}\n')
 elif format=='txt':
     for i in range(0, len(output)):
         space = map(lambda x: len(x), required_names)
@@ -94,7 +94,7 @@ else:
 # closing the file
 read.close()
 # opening the csv file (output file)
-write = open('/content/drive/MyDrive/Colab Notebooks/now.csv' if format == 'csv' else '/content/drive/MyDrive/Colab Notebooks/now.txt', 'w')
+write = open('./output.csv' if format == 'csv' else './output.txt', 'w')
 write.writelines(main_output)  # writing all the lines in the csv file
 write.close()  # closing the csv file
 print('success!!')
