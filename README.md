@@ -1,6 +1,7 @@
 # WA_chat_export
-    This is a advanced python program to save your time. This is used to sort out messages sent by particular members in a whatsapp chat export file
-this will be useful if you find a whatsapp group messy and could not find important messages
+    This is a advanced python program to save your time. 
+    This is used to sort out messages sent by particular members in a whatsapp chat export file
+    It will be useful if you find a whatsapp group messy and could not find important messages
 
 instructions:
 =============
