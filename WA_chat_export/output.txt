@@ -1,7 +1,7 @@
-Gladwin: sabari i cant run 
-         hey there 
-Gladwin: hello 
-Sabari:  hai  
-         hai how are you 
-Gladwin: what is the problem ? 
-Sabari:  i dont know 
+You: what is the use of this program 
+ Me: this program is to sort out messages  
+You: Can I use this for group messages? 
+ Me: This program is not only for personal messages 
+     you can always use this for group messages 
+You: Thank you, 
+     for giving me this useful program 
